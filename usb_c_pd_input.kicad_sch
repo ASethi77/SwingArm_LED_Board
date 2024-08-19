@@ -3037,6 +3037,12 @@
 		(uuid "15bc73ee-6a7f-4681-8af7-07f1faf8aeb4")
 	)
 	(junction
+		(at 53.34 100.33)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "520e238e-d78f-4ea4-bfdb-932eec3420d5")
+	)
+	(junction
 		(at 176.53 31.75)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3101,12 +3107,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "c080f10b-c025-4b2d-8b80-63f1632fb719")
-	)
-	(junction
-		(at 53.34 101.6)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "c64c2c7e-c5f1-4572-962d-937c614ee1b4")
 	)
 	(junction
 		(at 142.24 156.21)
@@ -3374,7 +3374,7 @@
 	)
 	(wire
 		(pts
-			(xy 53.34 101.6) (xy 53.34 104.14)
+			(xy 53.34 96.52) (xy 53.34 100.33)
 		)
 		(stroke
 			(width 0)
@@ -3574,16 +3574,6 @@
 	)
 	(wire
 		(pts
-			(xy 44.45 104.14) (xy 44.45 101.6)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "75a23326-3d29-4223-89c2-0b24ea1ff6dc")
-	)
-	(wire
-		(pts
 			(xy 209.55 133.35) (xy 209.55 146.05)
 		)
 		(stroke
@@ -3731,16 +3721,6 @@
 			(type default)
 		)
 		(uuid "9a27874d-925a-43a6-8dc2-f70ff5c176f1")
-	)
-	(wire
-		(pts
-			(xy 53.34 96.52) (xy 53.34 101.6)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9bdc8df6-6c35-4fe3-adb2-1ce80ee96d38")
 	)
 	(wire
 		(pts
@@ -3934,6 +3914,16 @@
 	)
 	(wire
 		(pts
+			(xy 53.34 100.33) (xy 53.34 104.14)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c4489273-bbae-4081-9f59-b8fac18ca297")
+	)
+	(wire
+		(pts
 			(xy 87.63 46.99) (xy 92.71 46.99)
 		)
 		(stroke
@@ -4001,16 +3991,6 @@
 			(type default)
 		)
 		(uuid "de79e342-0731-4592-b666-f6605275c801")
-	)
-	(wire
-		(pts
-			(xy 44.45 101.6) (xy 53.34 101.6)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e311330d-ad9f-415b-94e9-befc11251d10")
 	)
 	(wire
 		(pts
@@ -4921,72 +4901,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:PWR_FLAG")
-		(at 44.45 104.14 180)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "3e3d56d6-44a3-4db0-bb07-e307e79bba40")
-		(property "Reference" "#FLG01"
-			(at 44.45 106.045 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "PWR_FLAG"
-			(at 44.45 109.22 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 44.45 104.14 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 44.45 104.14 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Special symbol for telling ERC where power comes from"
-			(at 44.45 104.14 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "0f9385a4-de3f-44e5-81cc-c437c7acb187")
-		)
-		(instances
-			(project "SwingArm_LEDs"
-				(path "/bf56daef-330a-47b5-9092-f5abcbed14dc/370682c1-3e3f-4a9e-8b49-d84780bf961b"
-					(reference "#FLG01")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 165.1 166.37 0)
 		(unit 1)
@@ -5047,6 +4961,73 @@
 			(project ""
 				(path "/bf56daef-330a-47b5-9092-f5abcbed14dc/370682c1-3e3f-4a9e-8b49-d84780bf961b"
 					(reference "#PWR02")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 53.34 100.33 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "40be1490-fe21-4dc3-afde-75f006672098")
+		(property "Reference" "#FLG01"
+			(at 51.435 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 49.53 100.3299 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 53.34 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 53.34 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 53.34 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "9a4c4b80-9738-4fa5-947d-5a203b8ca01d")
+		)
+		(instances
+			(project ""
+				(path "/bf56daef-330a-47b5-9092-f5abcbed14dc/370682c1-3e3f-4a9e-8b49-d84780bf961b"
+					(reference "#FLG01")
 					(unit 1)
 				)
 			)
