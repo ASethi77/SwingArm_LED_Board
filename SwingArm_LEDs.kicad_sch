@@ -2731,10 +2731,10 @@
 		)
 		(uuid "f7372c60-53c4-4144-a883-8d5e51920701")
 	)
-	(text_box "Resistor value derivation:\n\nEach LED sinks 150mA with a 3.3V drop.\n\n20V input - 16.5V voltage drop = 3.5V voltage to drop across resistors\nPlan for LEDs sinking 20mA w/PWM for dimming, so whole string sinks 20mA\n\nV = I * 5R => 3.5V = (0.15A * 5R) => 5R = 3.5V / 0.15A => 5R = ~23.3 ohm.\nUsing one 5 ohm resistor per LED would then get us about the right current.\n\nP = I^2 * R => P = 0.15A * 0.15A * 5Ohm => 0.11 W thru resistors peak continuous\n\nEach string sinks 150mA and draws (5 * (0.5W + 0.11W)) = 3.05W.\n\n50 millohm resistor to GND is I.A.W. MP2410A datasheet recommendations."
+	(text_box "Resistor value derivation:\n\nEach LED sinks 150mA with a 3.3V drop.\n\n20V input - 16.5V voltage drop = 3.5V voltage to drop across resistors\nPlan for LEDs sinking 20mA w/PWM for dimming, so whole string sinks 20mA\n\nV = I * 5R => 3.5V = (0.15A * 5R) => 5R = 3.5V / 0.15A => 5R = ~23.3Ω.\nUsing one 4.7Ω resistor per LED would then get us about the right current.\n\nP = I^2 * R => P = 0.15A * 0.15A * 4.7Ω => 0.11 W thru resistors peak continuous\n\nEach string sinks 150mA and draws (5 * (0.5W + 0.11W)) = 3.05W."
 		(exclude_from_sim yes)
 		(at 19.05 19.05 0)
-		(size 68.58 52.07)
+		(size 68.58 40.64)
 		(stroke
 			(width 0)
 			(type default)
@@ -2966,7 +2966,7 @@
 				)
 			)
 		)
-		(property "Value" "5R"
+		(property "Value" "4.7R"
 			(at 148.59 41.91 90)
 			(effects
 				(font
@@ -3099,7 +3099,7 @@
 				)
 			)
 		)
-		(property "Value" "5R"
+		(property "Value" "4.7R"
 			(at 148.59 67.31 90)
 			(effects
 				(font
@@ -3300,7 +3300,7 @@
 				)
 			)
 		)
-		(property "Value" "5R"
+		(property "Value" "4.7R"
 			(at 118.11 67.31 90)
 			(effects
 				(font
@@ -3368,7 +3368,7 @@
 				)
 			)
 		)
-		(property "Value" "5R"
+		(property "Value" "4.7R"
 			(at 118.11 41.91 90)
 			(effects
 				(font
@@ -3504,7 +3504,7 @@
 				)
 			)
 		)
-		(property "Value" "5R"
+		(property "Value" "4.7R"
 			(at 179.07 41.91 90)
 			(effects
 				(font
@@ -3844,7 +3844,7 @@
 				)
 			)
 		)
-		(property "Value" "5R"
+		(property "Value" "4.7R"
 			(at 241.3 29.21 90)
 			(effects
 				(font
@@ -3979,7 +3979,7 @@
 				)
 			)
 		)
-		(property "Value" "5R"
+		(property "Value" "4.7R"
 			(at 241.3 67.31 90)
 			(effects
 				(font
@@ -4114,7 +4114,7 @@
 				)
 			)
 		)
-		(property "Value" "5R"
+		(property "Value" "4.7R"
 			(at 209.55 41.91 90)
 			(effects
 				(font
@@ -4320,7 +4320,7 @@
 				)
 			)
 		)
-		(property "Value" "5R"
+		(property "Value" "4.7R"
 			(at 241.3 54.61 90)
 			(effects
 				(font
@@ -4750,7 +4750,7 @@
 				)
 			)
 		)
-		(property "Value" "5R"
+		(property "Value" "4.7R"
 			(at 209.55 29.21 90)
 			(effects
 				(font
@@ -4818,7 +4818,7 @@
 				)
 			)
 		)
-		(property "Value" "5R"
+		(property "Value" "4.7R"
 			(at 118.11 29.21 90)
 			(effects
 				(font
@@ -5224,7 +5224,7 @@
 				)
 			)
 		)
-		(property "Value" "5R"
+		(property "Value" "4.7R"
 			(at 179.07 67.31 90)
 			(effects
 				(font
@@ -5498,7 +5498,7 @@
 				)
 			)
 		)
-		(property "Value" "5R"
+		(property "Value" "4.7R"
 			(at 179.07 54.61 90)
 			(effects
 				(font
@@ -5906,7 +5906,7 @@
 				)
 			)
 		)
-		(property "Value" "5R"
+		(property "Value" "4.7R"
 			(at 209.55 67.31 90)
 			(effects
 				(font
@@ -6246,7 +6246,7 @@
 				)
 			)
 		)
-		(property "Value" "5R"
+		(property "Value" "4.7R"
 			(at 209.55 54.61 90)
 			(effects
 				(font
@@ -6816,7 +6816,7 @@
 				)
 			)
 		)
-		(property "Value" "5R"
+		(property "Value" "4.7R"
 			(at 148.59 29.21 90)
 			(effects
 				(font
@@ -7020,7 +7020,7 @@
 				)
 			)
 		)
-		(property "Value" "5R"
+		(property "Value" "4.7R"
 			(at 179.07 29.21 90)
 			(effects
 				(font
@@ -7088,7 +7088,7 @@
 				)
 			)
 		)
-		(property "Value" "5R"
+		(property "Value" "4.7R"
 			(at 241.3 41.91 90)
 			(effects
 				(font
@@ -7156,7 +7156,7 @@
 				)
 			)
 		)
-		(property "Value" "5R"
+		(property "Value" "4.7R"
 			(at 148.59 54.61 90)
 			(effects
 				(font
@@ -7224,7 +7224,7 @@
 				)
 			)
 		)
-		(property "Value" "5R"
+		(property "Value" "4.7R"
 			(at 118.11 54.61 90)
 			(effects
 				(font
